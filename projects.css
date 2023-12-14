@@ -183,9 +183,3 @@ ul li:nth-child(23) {
     background-position: center;
     background-size: cover;
 }
-ul li:nth-child(24) {
-    background: url('TEXTURE_ARCH/new_pics/new12.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
