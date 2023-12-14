@@ -1,0 +1,191 @@
+body {
+    background-color: rgb(49, 48, 48) !important;
+}
+
+h1 {
+    color: white !important;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18px;
+    /* margin-bottom: 20px; */
+    color: #c5a47e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+
+ul li:nth-child(1) {
+    background: url('TEXTURE_ARCH/service_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-fluid p {
+    transition: 1s;
+    background: rgba(255, 255, 255, 0);
+    transform: scaleX(1) scaleY(0);
+}
+
+ul li:hover p {
+    background-color: rgb(49, 48, 48);
+    transition: 1s;
+    transform: scaleX(1) scaleY(1);
+}
+
+ul li:nth-child(2) {
+    background: url('TEXTURE_ARCH/service_4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(3) {
+    background: url('TEXTURE_ARCH/service_3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(4) {
+    background: url('TEXTURE_ARCH/service_2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(5) {
+    background: url('TEXTURE_ARCH/service_1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(6) {
+    background: url('TEXTURE_ARCH/project_3_7.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(7) {
+    background: url('TEXTURE_ARCH/project_3_1.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(8) {
+    background: url('TEXTURE_ARCH/project_3_2.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(9) {
+    background: url('TEXTURE_ARCH/project_3_3.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(10) {
+    background: url('TEXTURE_ARCH/project_3_4.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(11) {
+    background: url('TEXTURE_ARCH/project_3_5.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(12) {
+    background: url('TEXTURE_ARCH/project_3_6.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ul li:nth-child(13) {
+    background: url('TEXTURE_ARCH/new_pics/new1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(14) {
+    background: url('TEXTURE_ARCH/new_pics/new2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(15) {
+    background: url('TEXTURE_ARCH/new_pics/new3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(16) {
+    background: url('TEXTURE_ARCH/new_pics/new4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(17) {
+    background: url('TEXTURE_ARCH/new_pics/new5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(18) {
+    background: url('TEXTURE_ARCH/new_pics/new6.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(19) {
+    background: url('TEXTURE_ARCH/new_pics/new7.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(20) {
+    background: url('TEXTURE_ARCH/new_pics/new8.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(21) {
+    background: url('TEXTURE_ARCH/new_pics/new9.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(22) {
+    background: url('TEXTURE_ARCH/new_pics/new10.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(23) {
+    background: url('TEXTURE_ARCH/new_pics/new11.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+ul li:nth-child(24) {
+    background: url('TEXTURE_ARCH/new_pics/new12.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

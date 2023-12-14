@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RT</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg d-block d-lg-none fixed-top" style="background-color: rgb(49, 48, 48);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: #c5a47e;">RT</a>
+      <button class="btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="nav_line1 mt-1 mb-2"></div>
+        <div class="nav_line2 mt-1 mb-2"></div>
+        <div class="nav_line3 mt-1 mb-1"></div>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item  my-2" onclick="document.getElementsByClassName('carousel')[0].scrollIntoView();"> HOME
+          </li>
+          <li class="nav-item my-2" onclick="document.getElementsByClassName('services_body')[0].scrollIntoView();">
+            SERVICIES
+          </li>
+          <li class="nav-item my-2" onclick="document.getElementsByClassName('about_body')[0].scrollIntoView();">
+            ABOUT
+          </li>
+          <li class="nav-item my-2" onclick="document.getElementsByClassName('portfolio_body')[0].scrollIntoView();">
+            PROJECTS
+          </li>
+          <li class="nav-item my-2" onclick="document.getElementsByClassName('form-control')[0].scrollIntoView();">
+            CONTACT
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- side navbar -->
+      <div class="col-1 side_nav fixed-top d-none d-lg-block">
+        <div class="row justify-content-center">
+
+          <!-- website logo -->
+          <div class="col-12 align-items-center mt-5">
+            <img src="r.png" class="img-fluid mx-auto d-block" alt="not_found" height="100px" width="100px">
+          </div>
+          <!-- side navbar content -->
+          <div class="col-12 mt-4">
+            <ul class="list-unstyled d-flex justify-content-center align-items-center flex-column">
+              <li class="p-3" onclick="document.getElementsByClassName('carousel')[0].scrollIntoView();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-house-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                </svg>
+              </li>
+              <li class="p-3" onclick="document.getElementsByClassName('services_body')[0].scrollIntoView();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-gear-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                </svg>
+              </li>
+              <li class="p-3" onclick="document.getElementsByClassName('about_body')[0].scrollIntoView();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-file-person" viewBox="0 0 16 16">
+                  <path
+                    d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z" />
+                  <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+              </li>
+              <li class="p-3" onclick="document.getElementsByClassName('portfolio_body')[0].scrollIntoView();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-card-list" viewBox="0 0 16 16">
+                  <path
+                    d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                  <path
+                    d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                </svg>
+              </li>
+              <li class="p-3 mb-5" onclick="document.getElementsByClassName('form-control')[0].scrollIntoView();">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                  class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                  <path
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- side navbar ends -->
+      <!-- main website body -->
+      <div class="col-12 main_body">
+        <div class="row justify-content-end">
+          <div class="col-lg-11 col-12">
+            <div class="row justify-content-center">
+              <!-- couresol -->
+              <div class="col-12 p-0 mt-md-0 pt-md-0 mt-5 pt-2 ">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                      aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                      aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                      aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active " data-bs-interval="2000">
+                      <img src="TEXTURE_ARCH/couresol_1.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <img src="TEXTURE_ARCH/couresol_2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./TEXTURE_ARCH/couresol_3.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <!-- coreosl ends -->
+              <!-- services -->
+              <div class="col-12 mt-5 sections_heading">
+                <p class="text-center m-0">WHAT WE DO</p>
+                <h2 class="text-center text-light text-uppercase ">OUR Services</h2>
+              </div>
+              <div class="col-12 services_body">
+                <div class="row mt-5 justify-content-center">
+                  <div class="col-md-4 col-10 text-center mx-md-5 mx-2" id="service_1">
+                    <h1 class="p-2 pt-5 mt-5">01</h1>
+                    <h4 class="p-2 fs-5 mt-4 mb-4 text-uppercase">Architecture <br> & <br> INTERIOR DESIGN</h4>
+                    <p class="pb-5 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ducimus.</p>
+                  </div>
+                  <div class="col-md-4 col-10 text-center mx-md-5 mx-2" id="service_2">
+                    <h1 class="p-2  pt-lg-5 mt-md-5
+                    pt-4 mt-4">02</h1>
+                    <h4 class="p-2 fs-5 mt-4 mb-4">VALUATOIN <br> & <br> ESTIMATION</h4>
+                    <p class=" 
+                    pb-md-5 mb-md-5 pb-4 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus,
+                      ducimus.</p>
+                  </div>
+                  <div class="col-md-4 col-10 text-center mx-md-5 mx-2" id="service_4">
+                    <h1 class="p-2 pt-4 mt-4
+                    pt-md-5
+                    mt-md-5 ">03</h1>
+                    <h4 class="p-2 fs-5 mt-4 mb-4">APPROVAL <br> & <br> SANCTIONING</h4>
+                    <p class="pb-4 pb-4 mb-md-5 pb-md-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Minus, ducimus.</p>
+                  </div>
+                  <div class="col-md-4 col-10 text-center mx-md-5 mx-2" id="service_3">
+                    <h1 class="p-2 pt-4 mt-4
+                    pt-md-5 mt-md-5 ">04</h1>
+                    <h4 class="p-2 fs-5 mt-4 mb-4">Renovation <br> & <br> Restoration</h4>
+                    <p class=" pb-4 mb-4
+                    pb-md-5 
+                    mb-md-5 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, ducimus.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- services ends -->
+
+
+              <!-- about us -->
+              <div class="col-12 mt-5 sections_heading">
+                <h2 class="text-center text-light text-uppercase ">ABOUT US</h2>
+              </div>
+              <div class="col-12 about_body mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-10 pt-5">
+                    <img src="./TEXTURE_ARCH/Buddha123.jpg" class="img-thumbnail rounded-circle d-block m-auto" alt=""
+                      height="150px" width="150px">
+                  </div>
+                  <div class="col-11 pt-3 pb-3">
+                    <p class="text-white">Established by AR. Vaibhav Dwivedi and AR. Divyam Sharma in 2023, TEXTURE ARCH is a well-recognized
+                      firm for its diverse work that encompasses a range of specialised practice areas –Residential,
+                      Commercial, Workplace, and renovations, through in-house integrated project delivery. TEXTURE ARCH
+                      engages actively in practically sustainable and luxury designs.
+                      <br>
+                      <br>
+                      Meet Ar. Alok Yadav, the principal architect of TEXTURE ARCH. “At TEXTURE ARCH we design as a
+                      means to enhance personal experience and create a story around a space. We strive to make every
+                      space simple yet dynamic. Something a person will remember as an amazing experience.” - Ar. Vaibhav Dwivedi and Ar. Divyam Sharma
+                      <br>
+                      <br>
+                      Our aim is clear-” Architecture that creates curiosity in the mind of the viewer”. We ensure
+                      client satisfaction right from the beginning of the project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- about us ends -->
+
+              <!-- portfolio -->
+              <div class="col-12 mt-5 sections_heading">
+                <p class="text-center m-0">PORTFOLIO</p>
+                <h2 class="text-center text-light text-uppercase ">OUR PROJECTS</h2>
+              </div>
+              <div class="col-12 portfolio_body">
+                <div class="row mt-5 justify-content-center">
+                  <div class="col-md-4 col-9 col-sm-6 mb-3 mb-md-0 " id="project_1">
+                    <!-- <h4 class="mt-5 pt-5">INTERIOR</h4> -->
+                    <h2>Office Design</h2>
+                    <ion-icon class="right_arrow arrow1" name="arrow-forward-outline"></ion-icon>
+                  </div>
+                  <div class="col-9 col-md-4 col-sm-6 my-3 my-md-0 arrow1" id="project_2">
+                    <!-- <h4 class="mt-5 pt-5">EXTERIOR</h4> -->
+                    <h2>Residential Design</h2>
+                    <ion-icon class="right_arrow arrow2" name="arrow-forward-outline"></ion-icon>
+                  </div>
+                  <div class="col-9 col-md-4 col-sm-6 my-3 my-md-0 arrow1" id="project_3">
+                    <!-- <h4 class="mt-5 pt-5">URBAN</h4> -->
+                    <h2>Restorant Design</h2>
+                    <ion-icon class="right_arrow arrow3" name="arrow-forward-outline"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio ends -->
+              <!-- design1 expands -->
+              <div class="project_1_expand"></div>
+              <div class="col-12 project_1_expands mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 col-12">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/project_1_1.jpeg" class="img-fluid project_img rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/project_1_3.jpeg" class="img-fluid project_img rounded-3 "
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-4 mt-3">
+                        <img src="./TEXTURE_ARCH/project_1_4.jpeg" class="img-fluid project_img rounded-3 "
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-4 mt-3">
+                        <img src="./TEXTURE_ARCH/project_1_5.jpeg" class="img-fluid project_img rounded-3"
+                          alt="not_found">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-8 mt-md-o mt-3">
+                    <img src="./TEXTURE_ARCH/project_1_2.jpeg" class="img-fluid project_img_right rounded-3"
+                      alt="not_found">
+                  </div>
+                </div>
+              </div>
+              <!-- ends -->
+              <!-- design2 expands -->
+              <div class="project_2_expand"></div>
+              <div class="col-12 project_2_expands mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 col-12">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/project_2_1.jpeg" class="img-fluid project_img_2 rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/project_2_4.jpeg" class="img-fluid project_img_2 rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/project_2_5.jpeg" class="img-fluid project_img_2 rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/project_2_3.jpeg" class="img-fluid project_img_2 rounded-3"
+                          alt="not_found">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-8 mt-md-o mt-3 ">
+                    <img src="./TEXTURE_ARCH/project_2_7.jpeg" class="img-fluid project_img_3_right rounded-3"
+                      alt="not_found">
+                  </div>
+                </div>
+              </div>
+              <!-- ends -->
+
+
+              <!-- design3 expands -->
+              <div class="project_3_expand"></div>
+              <div class="col-12 project_3_expands mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-8 col-12">
+                    <div class="row justify-content-center">
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/dhaba5.jpg" class="img-fluid project_img_3 rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/dhaba4.jpg" class="img-fluid project_img_3 rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/dhaba3.jpg" class="img-fluid project_img_3 rounded-3"
+                          alt="not_found">
+                      </div>
+                      <div class="col-md-6 col-10 mt-md-o mt-3">
+                        <img src="./TEXTURE_ARCH/dhaba2.jpg" class="img-fluid project_img_3 rounded-3"
+                          alt="not_found">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-8 mt-md-o mt-3">
+                    <img src="./TEXTURE_ARCH/dhaba1.jpg" class="img-fluid project_img_2_right rounded-3"
+                      alt="not_found">
+                  </div>
+                </div>
+              </div>
+              <div class="12 mt-4">
+                <a href="./projects.html">
+                  <button class="btn btn-lg offset-md-10 offset-7 rounded-5" id="moreprojects">More
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                      class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+              <!-- ends -->
+
+              <!--happy clients -->
+              <div class="col-12 mx-auto d-block pt-5 mt-5 happy_client_card ">
+                <div class="row justify-content-center">
+                  <div class="col-md-4 col-10 mb-5 mb-md-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                      class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z" />
+                      <path
+                        d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z" />
+                    </svg>
+
+
+                    <h2 class="mt-4">Happy Clients</h2>
+                    <h4 class="happy_clients text-light">000</h4>
+                  </div>
+                  <div class="col-md-4 col-10 mb-5 mb-md-0">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                      class="bi bi-house-check-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
+                      <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
+                      <path
+                        d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514Z" />
+                    </svg>
+
+                    <h2 class="mt-4">Projects Completed</h2>
+                    <h4 class="happy_clients text-light">000</h4>
+                  </div>
+                  <div class="col-md-4 col-10">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor"
+                      class="bi bi-house-gear-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5Z" />
+                      <path
+                        d="M11.07 9.047a1.5 1.5 0 0 0-1.742.26l-.02.021a1.5 1.5 0 0 0-.261 1.742 1.5 1.5 0 0 0 0 2.86 1.504 1.504 0 0 0-.12 1.07H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6 4.724 4.724a1.5 1.5 0 0 0-1.654 1.03Z" />
+                      <path
+                        d="m13.158 9.608-.043-.148c-.181-.613-1.049-.613-1.23 0l-.043.148a.64.64 0 0 1-.921.382l-.136-.074c-.561-.306-1.175.308-.87.869l.075.136a.64.64 0 0 1-.382.92l-.148.045c-.613.18-.613 1.048 0 1.229l.148.043a.64.64 0 0 1 .382.921l-.074.136c-.306.561.308 1.175.869.87l.136-.075a.64.64 0 0 1 .92.382l.045.149c.18.612 1.048.612 1.229 0l.043-.15a.64.64 0 0 1 .921-.38l.136.074c.561.305 1.175-.309.87-.87l-.075-.136a.64.64 0 0 1 .382-.92l.149-.044c.612-.181.612-1.049 0-1.23l-.15-.043a.64.64 0 0 1-.38-.921l.074-.136c.305-.561-.309-1.175-.87-.87l-.136.075a.64.64 0 0 1-.92-.382ZM12.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" />
+                    </svg>
+
+                    <h2 class="mt-4">Ongoing Projects</h2>
+                    <h4 class="happy_clients text-light">000</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- happy clients ends -->
+
+              <!-- our professionals -->
+              <div class="col-12 mt-5">
+                <div class="col-12 mt-5 sections_heading">
+                  <p class="text-center m-0 text-uppercase">meet our team</p>
+                  <h2 class="text-center text-light text-uppercase ">OUR professionals</h2>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-md-4 col-10">
+                    <div class="card m-4 p-4 professional_card border-0" style="background-color: rgb(49, 48, 48);">
+                      <img src="./TEXTURE_ARCH/Vaibhav.jpg" class="img-fluid align-self-center rounded-circle"
+                        alt="not_found" height="150px" width="150px">
+                      <h5 class="text-center mt-3 mb-0 text-light">Vaibhav Dwivedi</h5>
+                      <p class="text-center">Manager</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-10">
+                    <div class="card m-4 p-4 professional_card border-0" style="background-color: rgb(49, 48, 48);">
+                      <img src="./TEXTURE_ARCH/Divyam.jpg" class="img-fluid align-self-center rounded-circle"
+                        alt="not_found" height="150px" width="150px">
+                      <h5 class="text-center mt-3 mb-0 text-light">Divyam Sharma</h5>
+                      <p class="text-center">CEO</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-10">
+                    <div class="card m-4 p-4 professional_card border-0" style="background-color: rgb(49, 48, 48);">
+                      <img src="./TEXTURE_ARCH/Himanshu.jpg" class="img-fluid align-self-center rounded-circle"
+                        alt="not_found" height="150px" width="150px">
+                      <h5 class="text-center mt-3 mb-0 text-light">Himanshu Singh</h5>
+                      <p class="text-center">assistant</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- our professionals ends -->
+
+
+              <!--contact us  -->
+              <div class="col-12">
+                <div class="col-12 mt-5 sections_heading">
+                  <p class="text-center m-0 text-uppercase">get in touch</p>
+                  <h2 class="text-center text-light text-uppercase ">contact us</h2>
+                </div>
+              </div>
+              <div class="col-4 align-items-center mt-5">
+                <img src="qr.png" class="img-fluid mx-auto d-block" alt="not_found" height="400px" width="400px">
+                <label class="text-light">Kindly perform the payements through here</label>
+              </div>
+              <div class="col-8 mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-5 col-9">
+                    <form action="https://formsubmit.co/texturearch99@gmail.com" method="POST" >
+                      <div class=" mb-3">
+                        <label for="name" class="form-label text-light">Name</label>
+                        <input type="text" class="form-control" aria-label="name" id="name" name="Name"
+                          aria-describedby="basic-addon1" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label text-light">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="Email" aria-describedby="emailHelp"
+                          required>
+                        <div id="emailHelp" class="form-text" style="color: antiquewhite;">We'll never share your email
+                          with anyone else.</div>
+                      </div>
+                      <div class=" mb-3">
+                        <label for="name" class="form-label text-light">Contact</label>
+                        <input type="tel" class="form-control" aria-label="name" id="number"
+                          aria-describedby="basic-addon1" name="Contact" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-light">Your Message</label>
+                        <textarea class="form-control" name="MSG" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                      </div>
+                      <button type="submit" class="btn" style="background-color: #c5a47e">Send Message</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- contact us ends -->
+              <!-- footer -->
+              <div class="col-12 mt-5">
+                <div class="row justify-content-center">
+                  <div class="col-4 text-light align-self-center">
+                    <h5>All Rights Reserved &copy; 2023</h5>
+                  </div>
+                  <div class="col-4 align-self-center">
+                    <img src="r.png" class="img-fluid mx-auto d-block" alt="nor_found" height="100px" width="100px">
+                  </div>
+                  <div class="col-4 align-self-center">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram" class="foot_icons"></ion-icon></a>
+                      </div>
+                      <div class="col-4">
+                        <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook" class="foot_icons"></ion-icon></a>
+                      </div>
+                      <div class="col-4">
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><ion-icon name="logo-linkedin" class="foot_icons"></ion-icon></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- footer ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main website body ends -->
+    </div>
+  </div>
+
+  <script src="logic.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
